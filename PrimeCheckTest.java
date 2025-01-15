@@ -22,26 +22,26 @@ public class PrimeCheckTest {
   // --------------------------------------------------------------- //
   @Test
   public void testPrimes() {
-    assertTrue("Test '2' (prime)", isPrime(2));
-    assertTrue("Test '3' (prime)", isPrime(3));
-    assertTrue("Test '5' (prime)", isPrime(5));
-    assertTrue("Test '7' (prime)", isPrime(7));
-    assertTrue("Test '11' (prime)", isPrime(11));
-    assertTrue("Test '13' (prime)", isPrime(13));
-    assertTrue("Test '23' (prime)", isPrime(23));
-    assertTrue("Test '43' (prime)", isPrime(43));
-    assertTrue("Test '97' (prime)", isPrime(97));
+    assertEquals("Test '2' (prime)", true, PrimeCheck.isPrime(2));
+    assertEquals("Test '3' (prime)", true, PrimeCheck.isPrime(3));
+    assertEquals("Test '5' (prime)", true, PrimeCheck.isPrime(5));
+    assertEquals("Test '7' (prime)", true, PrimeCheck.isPrime(7));
+    assertEquals("Test '11' (prime)", true, PrimeCheck.isPrime(11));
+    assertEquals("Test '13' (prime)", true, PrimeCheck.isPrime(13));
+    assertEquals("Test '23' (prime)", true, PrimeCheck.isPrime(23));
+    assertEquals("Test '43' (prime)", true, PrimeCheck.isPrime(43));
+    assertEquals("Test '97' (prime)", true, PrimeCheck.isPrime(97));
   }
 
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
-   assertFalse("Test '4' (non-prime)", isPrime(4));
-   assertFalse("Test '6' (non-prime)", isPrime(6));
-   assertFalse("Test '8' (non-prime)", isPrime(8));
-   assertFalse("Test '10' (non-prime)", isPrime(10));
-   assertFalse("Test '25' (non-prime)", isPrime(25));
-   assertFalse("Test '50' (non-prime)", isPrime(50));
-   assertFalse("Test '100' (non-prime)", isPrime(100));
+    assertEquals("Test '4' (non-prime)", false, PrimeCheck.isPrime(4));
+    assertEquals("Test '6' (non-prime)", false, PrimeCheck.isPrime(6));
+    assertEquals("Test '8' (non-prime)", false, PrimeCheck.isPrime(8));
+    assertEquals("Test '10' (non-prime)", false, PrimeCheck.isPrime(10));
+    assertEquals("Test '25' (non-prime)", false, PrimeCheck.isPrime(25));
+    assertEquals("Test '50' (non-prime)", false, PrimeCheck.isPrime(50));
+    assertEquals("Test '100' (non-prime)", false, PrimeCheck.isPrime(100));
   }
 }
